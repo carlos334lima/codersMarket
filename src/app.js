@@ -1,10 +1,13 @@
 //@libraries
 import cors from "cors";
 import express from "express";
+import routes from "./routes";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
-export {app};
+app.use(routes);
+
+export { app };
