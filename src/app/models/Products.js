@@ -32,8 +32,6 @@ class Products {
   }
 
   async create(product) {
-   
-
     const productFormatted = {
       ...product,
       id: Math.floor(Date.now() * Math.random()),

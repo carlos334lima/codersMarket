@@ -1,6 +1,6 @@
+import "dotenv/config";
 //@libraries
 import { app } from "./app";
-import "dotenv/config";
 
 const port = process.env.NODE_PORT;
 
